@@ -3,14 +3,14 @@
 This repository is a hands‑on tutorial designed to take you from SQL
 beginner to advanced concepts. It uses the **Chinook** sample
 database, a digital media store schema that includes tables for
-artists, albums, media tracks, invoices, customers and more【164620213541603†L74-L77】.  The
+artists, albums, media tracks, invoices, customers and more.  The
 database contains eleven tables in total: employees, customers,
 invoices and invoice items, artists, albums, media types, genres,
-tracks, playlists and the playlist–track mapping【385411505122746†L45-L67】.  The
+tracks, playlists and the playlist–track mapping.  The
 data was assembled from a mixture of sources: media data comes from
 real iTunes library metadata, customer and employee data uses fictitious
 names and addresses, and sales data is randomly generated over a four‑year
-period【161739135198354†L141-L146】.
+period.
 
 ## What’s included?
 
@@ -61,14 +61,3 @@ find an error or have suggestions for new lessons, please feel free to
 open an issue or submit a pull request.  Contributions that improve
 clarity, fix mistakes or extend the coverage of SQL topics are very
 welcome.
-
-## References
-
-1. Description of the Chinook database as a digital media store with
-   tables for artists, albums, media tracks, invoices and customers【164620213541603†L74-L77】.
-2. List of tables in the Chinook sample database: employees,
-   customers, invoices and invoice items, artists, albums, media
-   types, genres, tracks, playlists and playlist_track【385411505122746†L45-L67】.
-3. Details about how the Chinook dataset was created using real iTunes
-   metadata, fictitious personal data and randomly generated sales
-   information【161739135198354†L141-L146】.
