@@ -1,22 +1,53 @@
 # SQL Tutorial with the Chinook Database
 
-This repository is a hands‑on tutorial designed to take you from SQL
-beginner to advanced concepts. It uses the **Chinook** sample
-database, a digital media store schema that includes tables for
-artists, albums, media tracks, invoices, customers and more.  The
-database contains eleven tables in total: employees, customers,
-invoices and invoice items, artists, albums, media types, genres,
-tracks, playlists and the playlist–track mapping.  The
-data was assembled from a mixture of sources: media data comes from
-real iTunes library metadata, customer and employee data uses fictitious
-names and addresses, and sales data is randomly generated over a four‑year
-period.
+This repository is a hands‑on tutorial designed to take you from SQL beginner to advanced concepts. It uses the **Chinook** sample
+database — a realistic dataset that models a digital media store (similar to iTunes). It includes tables for artists, albums, tracks, customers, invoices, and more, making it perfect for practicing queries, joins, aggregations, and subqueries.
 
-## What’s included?
+---
 
-* `chinook.db` — A SQLite copy of the Chinook database.  You can
-  explore it using the `sqlite3` command‑line tool or any SQL client
-  that understands SQLite.  For example, open a terminal and run:
+## 🗃️ About the Chinook Database
+
+The **Chinook Sample Database** is a public, open-source example database created by Microsoft developer Lynn Root.  
+It is widely used in tutorials and courses.
+
+Each table in the database stores realistic information related to music sales:
+- **albums** – album titles and associated artists  
+- **artists** – artist information  
+- **tracks** – individual music tracks with album, genre, and media type  
+- **genres** – list of available music genres  
+- **customers** – customer contact and location details  
+- **invoices** – customer invoices  
+- **invoice_items** – items included in each invoice  
+- **playlists** – playlists created by users  
+- **playlist_track** – mapping between playlists and tracks  
+- **employees** – employee and support representative data  
+
+---
+
+## 📥 How to Get the Database
+
+You can download the SQLite version of the Chinook database directly from the official GitHub repository.
+
+### Option 1: Download via Browser
+1. Go to the official Chinook Database repo:  
+   🔗 [https://github.com/lerocha/chinook-database](https://github.com/lerocha/chinook-database)
+2. Open the folder: `ChinookDatabase/DataSources/`
+3. Download the file: **`Chinook_Sqlite.sqlite`**
+4. Rename it to **`chinook.db`**
+5. Place it inside this project folder.
+
+### Option 2: Download via Command Line
+If you prefer to download directly from the terminal:
+
+```bash
+# Using wget
+wget https://github.com/lerocha/chinook-database/raw/master/Chinook_Sqlite.sqlite -O chinook.db
+
+# Or using curl
+curl -L -o chinook.db https://github.com/lerocha/chinook-database/raw/master/Chinook_Sqlite.sqlite
+```
+### Option 3: Use the `chinook.db` database provided within this project.
+ You can explore it using the `sqlite3` command‑line tool or any SQL client that understands SQLite.  For example, open a terminal and run:
 
   ```sh
   sqlite3 chinook.db
@@ -25,7 +56,7 @@ period.
   ```
 
   If you prefer Python, you can use the built‑in `sqlite3` module or
-  `pandas` to query the database.
+  `pandas` to query the database. An example code `panda_query.ipynb` is also provided to get started.
 
 * `lessons/` — A folder containing forty Markdown files.  Each file
   covers one SQL concept in a conversational style and provides a
@@ -57,7 +88,5 @@ transactions and roll back, so the original dataset remains intact.
 ## Contributing
 
 This project is intended as a starting point for learning SQL.  If you
-find an error or have suggestions for new lessons, please feel free to
-open an issue or submit a pull request.  Contributions that improve
-clarity, fix mistakes or extend the coverage of SQL topics are very
-welcome.
+find an error or have suggestions for new lessons, please feel free to contribute.  
+Contributions that improve clarity, fix mistakes or extend the coverage of SQL topics are very welcome.
